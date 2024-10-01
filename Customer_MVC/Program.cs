@@ -8,7 +8,7 @@ namespace Customer_MVC
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            //Add service Products
+           
             builder.Services.AddSingleton<IServiceCustomers, ServiceCustomers>();
             builder.Services.AddDbContext<CustomerContext>(options =>
             {
